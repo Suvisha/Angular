@@ -1,0 +1,22 @@
+<table class=tableClass>
+
+  <tr>
+    <th>Employee ID</th>
+    <th>Employee Name</th>
+    <th>Employee Designation</th>
+  </tr>
+  <tr *ngFor="let Employee of employees">
+    <td>{{ Employee.id}}</td>
+    <td>{{ Employee.Name}}</td>
+    <td>{{ Employee.Designation}}</td>
+    <td>
+      <a href="/update">Edit</a>
+    </td>
+    <td>
+      <a href="/delete">Delete</a>
+    </td>
+  </tr>
+  <div>
+        <button type="submit" routerLink="/create">Add new Employee</button>
+  </div>
+</table>

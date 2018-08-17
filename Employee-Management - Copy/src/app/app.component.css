@@ -1,0 +1,9 @@
+
+.logo {
+    height: 100px;
+    width: auto;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    background:url('src/job_fair.jpg') no-repeat center center;
+}
