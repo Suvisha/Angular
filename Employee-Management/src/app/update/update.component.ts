@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Employee} from '../Employee'
 
 @Component({
   selector: 'app-update',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./update.component.css']
 })
 export class UpdateComponent implements OnInit {
+  updateclick : Employee = {
+    id : 1,
+    Name : "opds",
+    Designation : "It"
+  }
 
   constructor() { }
 
   ngOnInit() {
   }
-
+cancel()
+{
+  this.updateclick=null;
+}
 }

@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class DeleteComponent implements OnInit {
 
   constructor() { }
-
+ 
   ngOnInit() {
   }
+  delete()
+  {
 
+  }
 }

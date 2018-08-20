@@ -1,3 +1,25 @@
-<p>
-  update works!
-</p>
+<div *ngIf="updateclick" class="container">
+  <br>
+  <h1>Update form</h1><br>
+  <form  action="/action_page.php">
+  <div>
+      <label >Name:</label>
+      <div>
+      <input type="text" id="name" placeholder="{{updateclick.name}}">
+      </div>
+  </div>
+  <div >
+      <label>Department:</label>
+      <div >          
+      <input type="text" id="department" placeholder="{{updateclick.department}}">
+      </div>
+  </div>
+  <div>        
+      <div >
+      <button >Update</button>
+      <a href="" >Cancel</a>
+      </div>
+  </div>
+  </form>
+</div>        
+

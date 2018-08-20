@@ -9,6 +9,8 @@ import { Employees } from '../mock-Employees';
 })
 export class EmployeesComponent implements OnInit {
    employees:Employee[] = Employees;
+   update : Employee = null;
+   deleteId : number ;
   constructor() { }
   ngOnInit() {
   }
